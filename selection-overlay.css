@@ -1,0 +1,48 @@
+.summarize-app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.overlay-actions {
+  padding: 0 8px;
+}
+.my-card {
+  position: fixed;
+}
+.my-card .ant-card-head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  padding: 18px 8px;
+}
+.my-card .ant-card-body {
+  padding: 18px; /* adjust as needed */
+}
+
+/* This will change the width and color of the scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* This will change the background of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* This will change the color of the scrollbar thumb (the part that moves) */
+::-webkit-scrollbar-thumb {
+  background: #e4e4e4;
+  border-radius: 12px;
+}
+
+/* This will change the color of the scrollbar thumb when you hover over it */
+::-webkit-scrollbar-thumb:hover {
+  background: #838383;
+}

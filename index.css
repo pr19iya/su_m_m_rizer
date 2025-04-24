@@ -1,0 +1,55 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.app-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+}
+.app-title .dots {
+  animation: blink 1s 5;
+}
+
+/* This will change the width and color of the scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* This will change the background of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* This will change the color of the scrollbar thumb (the part that moves) */
+::-webkit-scrollbar-thumb {
+  background: #e4e4e4;
+  border-radius: 12px;
+}
+
+/* This will change the color of the scrollbar thumb when you hover over it */
+::-webkit-scrollbar-thumb:hover {
+  background: #838383;
+}
